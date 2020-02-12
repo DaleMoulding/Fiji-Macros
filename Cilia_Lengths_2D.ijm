@@ -3,7 +3,7 @@
 // please acknowledge its use in any publications or presentations.
 
 /*
- * Copyright (c) Dale Moulding, UCL. Made available for use under the MIT license.
+ * Copyright (c) 2016 Dale Moulding, UCL. Made available for use under the MIT license.
  * https://opensource.org/licenses/MIT
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
