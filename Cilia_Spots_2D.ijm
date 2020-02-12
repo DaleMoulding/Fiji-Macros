@@ -3,7 +3,7 @@
 //then counts the number of spots on each cilia in the 3rd channel.
 
 /*
- * Copyright (c) Dale Moulding, UCL. Made available for use under the MIT license.
+ * Copyright (c) 2020 Dale Moulding, UCL. Made available for use under the MIT license.
  * https://opensource.org/licenses/MIT
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
