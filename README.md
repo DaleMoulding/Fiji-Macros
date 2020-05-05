@@ -5,10 +5,10 @@
 
 [Cilia_Lengths_2D.ijm](https://github.com/DaleMoulding/Fiji-Macros/blob/master/Cilia_Lengths_2D.ijm) & [Cilia_Spots_2D.ijm](https://github.com/DaleMoulding/Fiji-Macros/blob/master/Cilia_Spots_2D.ijm) were used in:
 
-Taschner M, Lorentzen A, Mourão A, Collins T, Freke GM, Moulding D, Basquin J, Jenkins D, Lorentzen E. *Crystal structure of intraflagellar transport protein 80 reveals a homo-dimer required for ciliogenesis.* Elife. 2018 Apr 16;7. pii: e33067. PMID: [29658880](https://www.ncbi.nlm.nih.gov/pubmed/29658880)
+  Taschner M, Lorentzen A, Mourão A, Collins T, Freke GM, Moulding D, Basquin J, Jenkins D, Lorentzen E. *Crystal structure of intraflagellar transport protein 80 reveals a homo-dimer required for ciliogenesis.* Elife. 2018 Apr 16;7. pii: e33067. PMID: [29658880](https://www.ncbi.nlm.nih.gov/pubmed/29658880)
 
-Cilia_Lengths simply thresholds, skeletonizes and measures the length of cilia.
+*Cilia_Lengths simply thresholds, skeletonizes and measures the length of cilia.
 
-Cilia_Spots additionally makes a ROI around each cilia, and counts the number of punctae (here IFT80) on each cilia, their density and spacing.
+*Cilia_Spots additionally makes a ROI around each cilia, and counts the number of punctae (here IFT80) on each cilia, their density and spacing.
 
 ---
