@@ -10,7 +10,7 @@
 
 * ICH_scalebars_Mag_from_folder_v5.ijm
 
-    These set the scale and optionally adds scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x). 
+    These set the scale and optionally adds scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x, recognises any format x10, 10x, 10X, X10, as long as no spaces between number and x). 
 
     Alternatively, run the Mag_from_folder version for files grouped into folder by magnification used.
 
