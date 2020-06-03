@@ -39,7 +39,7 @@ Will be processed to give 2 new files in a new folder:
     
 By filling in the pop up box:
     
-![3chPopUp](/Images/3chPopupPicv004.JPG?raw=true)
+![3chPopUp](/Images/3chPopupPicv004.JPG)
     
 The save filename is generated from Ch1 filename, with the unique identifier removed, and '-3ch' or any text you specify appended.
 Enhance contrast will just make the images look brighter, but they can be reset in Fiji using the Adjust Color Balance window.
