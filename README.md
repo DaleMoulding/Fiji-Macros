@@ -6,7 +6,7 @@
 
 ### **Scalebars Macros:**
 
-[ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm](/ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm) and 
+[ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm](/ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm?raw=true) and 
 [ICH_scalebars_Mag_from_folder_v5.ijm](/ICH_scalebars_Mag_from_folder_v5.ijm)
 
 These set the scale and optionally add scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x, recognizes any format x10, 10x, 10X, X10, as long as there no spaces between number and x). 
