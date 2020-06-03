@@ -6,46 +6,44 @@
 
 ### **Scalebars Macros:**
 
-[ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm](/ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm)
-& 
+[ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm](/ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm) and 
 [ICH_scalebars_Mag_from_folder_v5.ijm](/ICH_scalebars_Mag_from_folder_v5.ijm)
 
-    These set the scale and optionally adds scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x, recognises any format x10, 10x, 10X, X10, as long as no spaces between number and x). 
-
-    Alternatively, run the Mag_from_folder version for files grouped into folder by magnification used.
-
+These set the scale and optionally add scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x, recognizes any format x10, 10x, 10X, X10, as long as there no spaces between number and x). 
+    
+Alternatively, run the Mag_from_folder version for files grouped into folder by magnification used.
+    
     Calibrated for ICH Imaging facility microscopes only.
 
 ### **Colour image Zeiss CZI Macros:**
 
-[CZItoRGB.ijm](/CZItoRGB.ijm)
-& 
+[CZItoRGB.ijm](/CZItoRGB.ijm) and
 [CZIroRGBFolder.ijm](/CZIroRGBFolder.ijm)
 
-    These macros correct the gamma display in Zeiss CZI files taken with a colour camera. The first macro corrects a single open file (you can save the output as a tif), the second macro will run through a folder of CZI files.
-    
+These macros correct the gamma display in Zeiss CZI files taken with a colour camera. The first macro corrects a single open file (you can save the output as a tif), the second macro will run through a folder of CZI files.
+
 ### **Combine 3 individual images into a 3 colour composite image:**
 
  [3ChCompfromFilenamev004.ijm](/3ChCompfromFilenamev004.ijm)
 
-    This macro works on a folder of images, where you have taken 3 individually saved images, and combines them into a single 3 channel composite image. 
-    For example, a folder with the following files:
+This macro works on a folder of images, where you have taken 3 individually saved images, and combines them into a single 3 channel composite image. 
+For example, a folder with the following files:
     
-    `ControlDapi-a1.tif, Control488-a1.tif, Control594-a1.tif,`
+`ControlDapi-a1.tif, Control488-a1.tif, Control594-a1.tif,`
     
-     `DrugDapi-b1.tif, Drug488-b1.tif, Drug594-b1.tif`
+`DrugDapi-b1.tif, Drug488-b1.tif, Drug594-b1.tif`
     
-    Will be processed to give 2 new files in a new folder:
+Will be processed to give 2 new files in a new folder:
     
-    `Control-a1-3ch.tif, Drug-b1-3ch.tif`
+`Control-a1-3ch.tif, Drug-b1-3ch.tif`
     
-    By filling in the pop up box:
+By filling in the pop up box:
     
-    ![3chPopUp](/Images/3chPopupPicv004.JPG)
+![3chPopUp](/Images/3chPopupPicv004.JPG)
     
-    The save filename is generated from Ch1 filename, with the unique identifier removed, and '-3ch' or any text you specify appended.
-    Enhance contrast will just make the images look brighter, but they can be reset in Fiji using the Adjust Color Balance window.
-    
+The save filename is generated from Ch1 filename, with the unique identifier removed, and '-3ch' or any text you specify appended.
+Enhance contrast will just make the images look brighter, but they can be reset in Fiji using the Adjust Color Balance window.
+
 ---
 ### **Published Macros**
 
