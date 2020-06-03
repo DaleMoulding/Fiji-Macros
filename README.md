@@ -36,14 +36,13 @@
     
     Will be processed to give 2 new files in a new folder:
     
-    `Control-a1-composite.tif, Drug-b1-composite.tif`
+    `Control-a1-3ch.tif, Drug-b1-3ch.tif`
     
     By filling in the pop up box:
     
-    ![3chPopUp](/Images/3chPopupPic.JPG)
+    ![3chPopUp](/Images/3chPopupPicv004.JPG)
     
-    The save filename is generated from Ch1 filename, with the unique identifier removed, and '-Composite' appended.
-    the appended text can be modified by changing the text in the macro line 86.
+    The save filename is generated from Ch1 filename, with the unique identifier removed, and '-3ch' or any text you specify appended.
     
 ---
 ### **Published Macros**
