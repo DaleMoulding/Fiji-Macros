@@ -13,7 +13,7 @@ These set the scale and optionally add scalebars to files with the magnification
     
 Alternatively, run the Mag_from_folder version for files grouped into folder by magnification used.
     
-    Calibrated for ICH Imaging facility microscopes only.
+Calibrated for ICH Imaging facility microscopes only.
 
 ### **Colour image Zeiss CZI Macros:**
 
