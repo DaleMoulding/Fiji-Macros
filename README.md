@@ -4,7 +4,7 @@
 ---
 ### **ICH Light Microscopy Facility Macro tools**
 
-**Scalebars Macros:**
+    **Scalebars Macros:**
 
 * ICH_Scalebars_Mag_anywhere_in_Filename_v4.ijm  
 
@@ -16,12 +16,34 @@
 
     Calibrated for ICH Imaging facility microscopes only.
 
-**Colour image Zeiss CZI Macros:**
+    **Colour image Zeiss CZI Macros:**
 
 * CZItoRGB.ijm
 * CZIroRGBFolder.ijm
 
     These macros correct the gamma display in Zeiss CZI files taken with a colour camera. The first macro corrects a single open file (you can save the output as a tif), the second macro will run through a folder of CZI files.
+    
+     **Combine 3 individual images into a 3 colour composite image:**
+
+ * 3ChCompfromFilenamev003.ijm 
+
+    This macro works on a folder of images, where you have taken 3 individually saved images, and combines them into a single 3 channel composite image. 
+    For example, a folder with the following files:
+    
+    `ControlDapi-a1.tif, Control488-a1.tif, Control594-a1.tif,`
+    
+     `DrugDapi-b1.tif, Drug488-b1.tif, Drug594-b1.tif`
+    
+    Will be proceseds to give 2 new files in a new folder:
+    
+    `Control-a1-composite.tif, Drug-b1-composite.tif`
+    
+    By filling in the pop up box:
+    
+    ![3chPopUp](/Images/3chPopup.JPG)
+    
+    The save filename is generated from Ch1 filename, with the unique identifier removed, and '-Composite' appended.
+    the appended text can be modified by changing the text in the macro line 86.
     
 ---
 ### **Published Macros**
