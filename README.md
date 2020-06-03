@@ -40,7 +40,7 @@
     
     By filling in the pop up box:
     
-    ![3chPopUp](/Images/3chPopup.JPG)
+    ![3chPopUp](/Images/3chPopupPic.JPG)
     
     The save filename is generated from Ch1 filename, with the unique identifier removed, and '-Composite' appended.
     the appended text can be modified by changing the text in the macro line 86.
