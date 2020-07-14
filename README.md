@@ -69,7 +69,7 @@ Image of muring e9.5 Neural tube closure point. Gabe Galea UCL. Surface extracte
 [SphericityRoundnessConvexity.ijm](/SphericityRoundnessConvexity.ijm?raw=true) published in:
 * Bruno Vindrola-Padrós, Dale Moulding, Ciprian Astaloş, Cristian Virag, Ulrike Sommer. Working with broken agents: Exploring computational 2D morphometrics for studying the (post)depositional history of potsherds. J Archaeol Sci. 2019 Feb 104:19-33. [https://doi.org/10.1016/j.jas.2019.01.008](https://doi.org/10.1016/j.jas.2019.01.008).
 
-Macro to segment objects (archaeological potsherds here) and provide morphometric measures, including standard Fiji functions & smallest enclosing circle, Maximum Inscribed circle, and convexity (Perimeter / Convex Hull). Requires the [Maximum_Inscribed_Cirlce.jar](/Maximum_Inscribed_Circle.jar) plugin developed by Olivier Burri and Romain Guiet at BIOP [https://biop.epfl.ch/Fiji-Update/plugins/BIOP/](https://biop.epfl.ch/Fiji-Update/plugins/BIOP/)
+Macro developed with Bruno Vindrola-Padrós to segment objects (archaeological potsherds here) and provide morphometric measures, including standard Fiji functions & smallest enclosing circle, Maximum Inscribed circle, and convexity (Perimeter / Convex Hull). Requires the [Maximum_Inscribed_Cirlce.jar](/Maximum_Inscribed_Circle.jar) plugin developed by Olivier Burri and Romain Guiet at BIOP [https://biop.epfl.ch/Fiji-Update/plugins/BIOP/](https://biop.epfl.ch/Fiji-Update/plugins/BIOP/)
 
 Image adapted from the paper above:
 
