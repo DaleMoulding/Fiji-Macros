@@ -45,7 +45,7 @@ The save filename is generated from Ch1 filename, with the unique identifier rem
 Enhance contrast will just make the images look brighter, but they can be reset in Fiji using the Adjust Color Balance window.
 
 ---
-# **Published Macros**
+## **Published Macros**
 
 [Cilia_Lengths_2D.ijm](/Cilia_Lengths_2D.ijm?raw=true) & [Cilia_Spots_2D.ijm](/Cilia_Spots_2D.ijm?raw=true) were published in:
 
