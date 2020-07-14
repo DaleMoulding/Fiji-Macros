@@ -54,5 +54,10 @@ Enhance contrast will just make the images look brighter, but they can be reset 
     **Cilia_Lengths** simply thresholds, skeletonizes and measures the length of cilia.
 
     **Cilia_Spots** additionally makes a ROI around each cilia, and counts the number of punctae (here IFT80) on each cilia, their density and spacing.
+    
+[IdentifyUpperSurfacev2.ijm](/IdentifyUpperSurfacev2.ijm?raw=true) published in:
+* Bruno Vindrola-Padrós, Dale Moulding, Ciprian Astaloş, Cristian Virag, Ulrike Sommer. Working with broken agents: Exploring computational 2D morphometrics for studying the (post)depositional history of potsherds. J Archaeol Sci. 2019 Feb 104:19-33. [https://doi.org/10.1016/j.jas.2019.01.008](https://doi.org/10.1016/j.jas.2019.01.008).
+
+![Surface axtraction animation, Image from Gabe Galea UCL](/Images/SurfaceExtractPic.gif)
 
 ---
