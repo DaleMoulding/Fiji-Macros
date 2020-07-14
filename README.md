@@ -55,11 +55,25 @@ Enhance contrast will just make the images look brighter, but they can be reset 
 
     **Cilia_Spots** additionally makes a ROI around each cilia, and counts the number of punctae (here IFT80) on each cilia, their density and spacing.
     
+---
+    
 [IdentifyUpperSurfacev2.ijm](/IdentifyUpperSurfacev2.ijm?raw=true) published in:
-* Bruno Vindrola-Padrós, Dale Moulding, Ciprian Astaloş, Cristian Virag, Ulrike Sommer. Working with broken agents: Exploring computational 2D morphometrics for studying the (post)depositional history of potsherds. J Archaeol Sci. 2019 Feb 104:19-33. [https://doi.org/10.1016/j.jas.2019.01.008](https://doi.org/10.1016/j.jas.2019.01.008).
+* Galea GL, Nychyk O, Mole MA, Moulding D, Savery D, Nikolopoulou E, Henderson DJ, Greene NDE, Copp AJ.Vangl2 disruption alters the biomechanics of late spinal neurulation leading to spina bifida in mouse embryos. Dis Model Mech. 2018 Mar 21;11(3). PMID: [29590636](https://www.ncbi.nlm.nih.gov/pubmed/29590636).
 
-Image of muring e9.5 Neural tube closure point. Gabe Galea UCL. Surface extracted with this macro.
+Image of muring e9.5 Neural tube closure point. Gabe Galea UCL. Surface extracted with this macro. Can be adapte to take any number of pixels from the upper surface, or below the upper surface.
 
 ![SurfExt](/Images/SurfExtPic.gif)
+
+---
+
+[SphericityRoundnessConvexity.ijm](/SphericityRoundnessConvexity.ijm?raw=true) published in:
+* Bruno Vindrola-Padrós, Dale Moulding, Ciprian Astaloş, Cristian Virag, Ulrike Sommer. Working with broken agents: Exploring computational 2D morphometrics for studying the (post)depositional history of potsherds. J Archaeol Sci. 2019 Feb 104:19-33. [https://doi.org/10.1016/j.jas.2019.01.008](https://doi.org/10.1016/j.jas.2019.01.008).
+
+Macro to segment objects (Archealogical Potsherds here) and provide morphometric measures, including standard Fiji functions & smallest enclosing circle, Maximum Inscribed circle, and convexity (Perimeter / Convex Hull). Requires the [Maximum_Inscribed_Cirlce.jar](/Maximum_Inscribed_Circle.jar) plugin developed by Olivier Burri and Romain Guiet at BIOP [https://biop.epfl.ch/Fiji-Update/plugins/BIOP/](https://biop.epfl.ch/Fiji-Update/plugins/BIOP/)
+
+Image adapted from the paper above:
+
+![SpherConv](/Images/Shapes.jpg)
+
 
 ---
