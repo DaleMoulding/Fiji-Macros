@@ -60,7 +60,7 @@ Enhance contrast will just make the images look brighter, but they can be reset 
 [IdentifyUpperSurfacev2.ijm](/IdentifyUpperSurfacev2.ijm?raw=true) published in:
 * Galea GL, Nychyk O, Mole MA, Moulding D, Savery D, Nikolopoulou E, Henderson DJ, Greene NDE, Copp AJ.Vangl2 disruption alters the biomechanics of late spinal neurulation leading to spina bifida in mouse embryos. Dis Model Mech. 2018 Mar 21;11(3). PMID: [29590636](https://www.ncbi.nlm.nih.gov/pubmed/29590636).
 
-Image of muring e9.5 Neural tube closure point (Gabe Galea UCL). Surface extracted with this macro. Macro can be adapted to take any number of pixels from the upper surface, or below the upper surface.
+Image of murine e9.5 Neural tube closure point (Gabe Galea UCL). Surface extracted with this macro. Macro can be adapted to take any number of pixels from the upper surface, or below the upper surface.
 
 ![SurfExt](/Images/SurfExtPic.gif)
 
