@@ -18,7 +18,7 @@ Calibrated for ICH Imaging facility microscopes only.
 ### **Colour image Zeiss CZI Macros:**
 
 [CZItoRGB.ijm](/CZItoRGB.ijm?raw=true) and
-[CZIroRGBFolder.ijm](/CZIroRGBFolder.ijm?raw=true)
+[CZItoRGBFolder.ijm](/CZItoRGBFolder.ijm?raw=true)
 
 These macros correct the gamma display in Zeiss CZI files taken with a colour camera. The first macro corrects a single open file (you can save the output as a tif), the second macro will run through a folder of CZI files.
 
