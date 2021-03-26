@@ -25,7 +25,7 @@
 
 Image of murine e9.5 Neural tube closure point (Gabe Galea UCL). Surface extracted with this macro. Macro can be adapted to take any number of pixels from the upper surface, or below the upper surface.
 
-![SurfExt](/Images/SurfExtPic.gif)
+![SurfExt](/Images/SurfExtPic2.gif)
 
 ---
 
