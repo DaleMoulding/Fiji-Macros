@@ -71,6 +71,7 @@ macro "Batch combine 3 channel images" {
                   ch3 = list[j];
           }
           open(dir1 +ch1);
+	  imagename = File.nameWithoutExtension;
           open(dir1 +ch2);
           open(dir1 +ch3);
           
@@ -89,7 +90,7 @@ macro "Batch combine 3 channel images" {
           	run("Enhance Contrast...", "saturated=0.1");
           	
 	      remove = replace(ch1Ident, "\\.\\*", ""); // remove the .* from before and after the ch1Indent string. 
-	      savename = replace(ch1, remove,""); // delete the ch1 indentifier from the ch1 filename so it saves with a sensible new name.
+	      savename = replace(imagename, remove,""); // delete the ch1 indentifier from the ch1 filename so it saves with a sensible new name.
           saveAs("tiff", dir2+savename+ending);
           first += 3;
       }
