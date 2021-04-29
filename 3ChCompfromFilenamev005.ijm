@@ -17,6 +17,7 @@
 // v002: you have the option to enhance contrast on the output images. This can be reversed.
 // v003: ch1 used to generate a new filename, removing the channel identifier from the new name.
 // v004: choose your own output filename ending. Suggested: -3ch
+// v005: fixes filenames saved with original extension
 
 macro "Batch combine 3 channel images" {
 
