@@ -3,20 +3,21 @@
 // Adaptation by Dale Moulding, UCL Institute of Child Health Imaging Facilty, 2021
  
 // ****************************************************************************************
-//		Takes a folder of individually saved 3 channel images, and produces a new image
-//		with the 3 channels combined into a single composite image.
+//		Takes a folder of individually saved 2 channel images, and produces a new image
+//		with the 2 channels combined into a single composite image.
 // 		The original macro required the end of each filename to have a unique identifier.
-// 		i.e. Dapi, GFP, RFP. So Image001Dapi.tif etc
+// 		i.e. Dapi, GFP. So Image001Dapi.tif etc
 // 		This new version allows the identifier to be anywhere in the filename.
 // 		i.e. Image001Dapi-Left-hemisphere.tif, Image001-Dapi-10June2020.tif
 // 		Files must still be listed in the folder in order, so the first 
-// 	 	3 files makes the first image, the next 3 are the second image etc.
+// 	 	2 files makes the first image, the next 2 are the second image etc.
 // ****************************************************************************************
 
 // v002: you can set each channel to any default colour (Blue, Green, Red, Cyan, Yellow, Magenta, Grays)
 // v002: you have the option to enhance contrast on the output images. This can be reversed.
 // v003: ch1 used to generate a new filename, removing the channel identifier from the new name.
 // v004: choose your own output filename ending. Suggested: -3ch
+// v005: fixed filenames including original extensions
 
 macro "Batch combine 2 channel images" {
 
