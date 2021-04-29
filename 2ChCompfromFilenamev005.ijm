@@ -1,6 +1,6 @@
-// "Batch Create 3 colour composite image" adapted from "Batch RGB merge" 
+// "Batch Create 2 colour composite image" adapted from "Batch RGB merge" 
 // Source: http://rsb.info.nih.gov/ij/macros/Batch_RGB_Merge.txt
-// Adaptation by Dale Moulding, UCL Institute of Child Health Imaging Facilty, 2020
+// Adaptation by Dale Moulding, UCL Institute of Child Health Imaging Facilty, 2021
  
 // ****************************************************************************************
 //		Takes a folder of individually saved 3 channel images, and produces a new image
