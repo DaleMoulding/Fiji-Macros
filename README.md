@@ -59,9 +59,11 @@ Calibrated for ICH Imaging facility microscopes only.
 
 These macros correct the gamma display in Zeiss CZI files taken with a colour camera. The first macro corrects a single open file (you can save the output as a tif), the second macro will run through a folder of CZI files.
 
-### **Combine 3 individual images into a 3 colour composite image:**
+### **Combine 2 or 3 individual images into a 2 or 3 colour composite image:**
 
  [3ChCompfromFilenamev005.ijm](/3ChCompfromFilenamev005.ijm?raw=true)
+
+ [2ChCompfromFilenamev005.ijm](/2ChCompfromFilenamev005.ijm?raw=true)
 
 This macro works on a folder of images, where you have taken 3 individually saved images, and combines them into a single 3 channel composite image. 
 For example, a folder with the following files:
