@@ -16,6 +16,8 @@
     **Cilia_Spots** additionally makes a ROI around each cilia, and counts the number of punctae (here IFT80) on each cilia, their density and spacing.
     
 ---
+
+### **Indentify Upper Surface:**
     
 [IdentifyUpperSurfacev2.ijm](/IdentifyUpperSurfacev2.ijm?raw=true) as used in:
 * Vangl2 disruption alters the biomechanics of late spinal neurulation leading to spina bifida in mouse embryos.   Dis Model Mech. 2018 Mar 21;11(3). PMID: [29590636](https://www.ncbi.nlm.nih.gov/pubmed/29590636).
@@ -30,6 +32,8 @@ Image of murine e9.5 Neural tube closure point (Gabe Galea UCL). Surface extract
 ![SurfExt](/Images/SurfExtPic2.gif)
 
 ---
+
+### **Sphericity Roundess & Convexivity:**
 
 [SphericityRoundnessConvexity.ijm](/SphericityRoundnessConvexity.ijm?raw=true) published in:
 * Bruno Vindrola-Padrós, Dale Moulding, Ciprian Astaloş, Cristian Virag, Ulrike Sommer. Working with broken agents: Exploring computational 2D morphometrics for studying the (post)depositional history of potsherds. J Archaeol Sci. 2019 Feb 104:19-33. [https://doi.org/10.1016/j.jas.2019.01.008](https://doi.org/10.1016/j.jas.2019.01.008).
