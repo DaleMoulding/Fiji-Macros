@@ -48,7 +48,7 @@ Image adapted from the paper above:
 
 ### **Podocyte F-actin / synaptopodin:**
 
-Mason et all manuscript submitted, Macro will be available here.
+Mason *et al* manuscript submitted, Macro will be available here.
 
 ---
 ## **ICH Light Microscopy Facility Macro tools**
