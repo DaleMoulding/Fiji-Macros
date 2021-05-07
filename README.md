@@ -53,7 +53,7 @@ Mason *et al* manuscript submitted.
 [GlomActinSynaptov004vEV-6-UPDATESINGLEFILEFINAL.ijm](/GlomActinSynaptov004vEV-6-UPDATESINGLEFILEFINAL.ijm?raw=true) &
 [GlomActinSynaptov005vEV-UPDATEFOLDERFINAL.ijm](/GlomActinSynaptov005vEV-UPDATEFOLDERFINAL.ijm?raw=true)
 process individual files (for initial threshold adjustments) or a folder of images (using predetermined thresholds). 
-Thresholds for two channels (Synaptopodin and F-actin) and measures parameters describing the area of each stain, proprotions of overlaps between stains, intensity of staining in all regions (overlap / non-overlap) as absolute amount and percentages. Outputs results as a .csv table, saves all ROIs and an output image showing regions measured for each file.
+Thresholds for two channels (Synaptopodin and F-actin) and measures parameters describing the area of each stain, proprortions of overlaps between stains, intensity of staining in all regions (overlap / non-overlap) as absolute amount and percentages. Outputs results as a .csv table, saves all ROIs and an output image showing regions measured for each file.
 
 ![MasonetalGlomsImage.jpg](/Images/MasonetalGlomsImage.jpg)
 
