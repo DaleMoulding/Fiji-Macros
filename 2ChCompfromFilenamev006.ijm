@@ -18,6 +18,9 @@
 // v003: ch1 used to generate a new filename, removing the channel identifier from the new name.
 // v004: choose your own output filename ending. Suggested: -3ch
 // v005: fixed filenames including original extensions
+//v006: if its a stack moves to centre slice before enhance contrast - now resetMinAndMAx();
+// v006: function also outputs number of images processed.
+
 
 macro "Batch combine 2 channel images" {
 
@@ -46,9 +49,8 @@ macro "Batch combine 2 channel images" {
   ending = Dialog.getString()
   EnhanceContrast = Dialog.getCheckbox();
  
-  batchConvert();
-  x=nImages();
-  print(x+" sets of 2-channel composite images produced");
+  nProcessed = batchConvert(); // v006 count the number of mages processed
+  print(nProcessed+" sets of 4-channel composite images produced");
   exit;
 
   function batchConvert() {
@@ -77,22 +79,28 @@ macro "Batch combine 2 channel images" {
          // open(dir1 +ch3);
           
           run("Merge Channels...", "c1=["+ch1+"] c2=["+ch2+"] create");
+	  
+	  getDimensions(width, height, channels, slices, frames); // is it a z-stack, if so set it to the centre slice
+		  if (slices > 1)
+				Stack.setSlice(slices/2);
+	  
           Stack.setChannel(1); //set channel colours:
           run(ch1colour);
           if (EnhanceContrast) // if you selected to enhance contrast it is applied here
-          	run("Enhance Contrast...", "saturated=0.1");
+          	resetMinAndMax();
           Stack.setChannel(2); 
           run(ch2colour);
           if (EnhanceContrast)
-          	run("Enhance Contrast...", "saturated=0.1");
+          	resetMinAndMax();
          // Stack.setChannel(3); 
          // run(ch3colour);
          // if (EnhanceContrast)
-          //	run("Enhance Contrast...", "saturated=0.1");
+          //	resetMinAndMax();
           	
 	      remove = replace(ch1Ident, "\\.\\*", ""); // remove the .* from before and after the ch1Indent string. 
 	      savename = replace(imagename, remove,""); // delete the ch1 indentifier from the ch1 filename so it saves with a sensible new name.
           saveAs("tiff", dir2+savename+ending);
           first += 2;
       }
+      return n/2; //v006 count processed images, not just images open at end of function
   }
