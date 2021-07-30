@@ -82,7 +82,7 @@ These macros correct the gamma display in Zeiss CZI files taken with a colour ca
 
  [3ChCompfromFilenamev005.ijm](/3ChCompfromFilenamev005.ijm?raw=true)
 
- [2ChCompfromFilenamev005.ijm](/2ChCompfromFilenamev005.ijm?raw=true)
+ [2ChCompfromFilenamev006.ijm](/2ChCompfromFilenamev006.ijm?raw=true)
 
 This macro works on a folder of images, where you have taken 3 individually saved images, and combines them into a single 3 channel composite image. 
 For example, a folder with the following files:
