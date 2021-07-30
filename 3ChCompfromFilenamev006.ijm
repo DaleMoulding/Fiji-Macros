@@ -18,6 +18,8 @@
 // v003: ch1 used to generate a new filename, removing the channel identifier from the new name.
 // v004: choose your own output filename ending. Suggested: -3ch
 // v005: fixes filenames saved with original extension
+// v006: if its a stack moves to centre slice before enhance contrast - now resetMinAndMAx();
+// v006: function also outputs number of images processed.
 
 macro "Batch combine 3 channel images" {
 
@@ -32,9 +34,9 @@ macro "Batch combine 3 channel images" {
   Dialog.addChoice("Ch3 colour", newArray("Blue", "Green", "Red", "Cyan", "Magenta", "Yellow", "Grays"), "Red");
   Dialog.addMessage("What do you want the new files to be labelled as?")
   Dialog.addString("Filename ends:", "-3ch");
-  Dialog.addMessage("Enhance contrast in the output images?");
+  Dialog.addMessage("Reset display range in output images? \nThis makes dim images visible & can be reversed");
   Dialog.setInsets(5, 80, 0);
-  Dialog.addCheckbox("Enhance Contrast?", true);
+  Dialog.addCheckbox("Reset display?", true);
 
   Dialog.show();
   ch1Ident = ".*" + Dialog.getString() + ".*"; // add .* before and after the identifier string, so that 'matches' can be used later to find the identifier anywhere in the filename
@@ -46,9 +48,8 @@ macro "Batch combine 3 channel images" {
   ending = Dialog.getString()
   EnhanceContrast = Dialog.getCheckbox();
  
-  batchConvert();
-  x=nImages();
-  print(x+" sets of 3-channel composite images produced");
+  nProcessed = batchConvert(); // v006 count the number of mages processed
+  print(nProcessed+" sets of 4-channel composite images produced");
   exit;
 
   function batchConvert() {
@@ -77,22 +78,28 @@ macro "Batch combine 3 channel images" {
           open(dir1 +ch3);
           
           run("Merge Channels...", "c1=["+ch1+"] c2=["+ch2+"] c3=["+ch3+"] create");
+	  
+	  getDimensions(width, height, channels, slices, frames); // is it a z-stack, if so set it to the centre slice
+	  if (slices > 1)
+		Stack.setSlice(slices/2);
+	  
           Stack.setChannel(1); //set channel colours:
           run(ch1colour);
           if (EnhanceContrast) // if you selected to enhance contrast it is applied here
-          	run("Enhance Contrast...", "saturated=0.1");
+          	resetMinAndMax();
           Stack.setChannel(2); 
           run(ch2colour);
           if (EnhanceContrast)
-          	run("Enhance Contrast...", "saturated=0.1");
+          	resetMinAndMax();
           Stack.setChannel(3); 
           run(ch3colour);
           if (EnhanceContrast)
-          	run("Enhance Contrast...", "saturated=0.1");
+          	resetMinAndMax();
           	
 	      remove = replace(ch1Ident, "\\.\\*", ""); // remove the .* from before and after the ch1Indent string. 
 	      savename = replace(imagename, remove,""); // delete the ch1 indentifier from the ch1 filename so it saves with a sensible new name.
           saveAs("tiff", dir2+savename+ending);
           first += 3;
       }
+      return n/3; //v006 count processed images, not just images open at end of function
   }
