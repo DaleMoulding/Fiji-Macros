@@ -3,8 +3,8 @@
 // Adaptation by Dale Moulding, UCL Institute of Child Health Imaging Facilty, 2021
  
 // ****************************************************************************************
-//		Takes a folder of individually saved 3 channel images, and produces a new image
-//		with the 3 channels combined into a single composite image.
+//		Takes a folder of individually saved 4 channel images, and produces a new image
+//		with the 4 channels combined into a single composite image.
 // 		The original macro required the end of each filename to have a unique identifier.
 // 		i.e. Dapi, GFP, RFP. So Image001Dapi.tif etc
 // 		This new version allows the identifier to be anywhere in the filename.
@@ -26,10 +26,10 @@ macro "Batch combine 4 channel images" {
 
   Dialog.create("Batch create 4 colour composite");
   Dialog.addMessage("Please enter the 4 unique identifiers \nin the filenames for each channel...")
-  Dialog.addString("Ch1 identifier:", "_Ch00"); // this channel also used to set the output filename.
-  Dialog.addString("Ch2 identifier:", "_Ch01");
-  Dialog.addString("Ch3 identifier:", "_Ch02");
-  Dialog.addString("Ch4 identifier:", "_Ch03");
+  Dialog.addString("Ch1 identifier:", "_ch00"); // this channel also used to set the output filename.
+  Dialog.addString("Ch2 identifier:", "_ch01");
+  Dialog.addString("Ch3 identifier:", "_ch02");
+  Dialog.addString("Ch4 identifier:", "_ch03");
   Dialog.addMessage("Set the output colours... ");
   Dialog.addChoice("Ch1 colour", newArray("Blue", "Green", "Red", "Cyan", "Magenta", "Yellow", "Grays"), "Cyan");
   Dialog.addChoice("Ch2 colour", newArray("Blue", "Green", "Red", "Cyan", "Magenta", "Yellow", "Grays"), "Yellow");
