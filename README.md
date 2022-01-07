@@ -20,6 +20,9 @@
 ### **Indentify Upper Surface:**
     
 [IdentifyUpperSurfacev2.ijm](/IdentifyUpperSurfacev2.ijm?raw=true) as used in:
+
+**New version - High Speed (GPU based), tunable interactive surface placement, peel any distance and thickness above or below the identified surface in seconds.** [follow this link...](https://github.com/DaleMoulding/SurfacePeeler)
+
 * Vangl2 disruption alters the biomechanics of late spinal neurulation leading to spina bifida in mouse embryos.   Dis Model Mech. 2018 Mar 21;11(3). PMID: [29590636](https://www.ncbi.nlm.nih.gov/pubmed/29590636).
 * Spinal neural tube closure depends on regulation of surface ectoderm identity and biomechanics by Grhl2. Nat Commun. 2019 Jun 6;10(1):2487.PMID: [31171776](https://pubmed.ncbi.nlm.nih.gov/31171776/).
 * Rho kinase-dependent apical constriction counteracts M-phase apical expansion to enable mouse neural tube closure. J Cell Sci. 2019 Jul 1;132(13)jcs230300.PMID: [31182644](https://pubmed.ncbi.nlm.nih.gov/31182644/).
