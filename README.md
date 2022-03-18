@@ -61,6 +61,19 @@ Thresholds for two channels (Synaptopodin and F-actin) and measures parameters d
 ![MasonetalGlomsImage.jpg](/Images/MasonetalGlomsImage.jpg)
 
 ---
+
+### **Monocyte Mitochondria and MitoSox**
+
+Wilkinson *et al* manuscript submitted.
+
+Individual cells were cropped by manually drawing an ellipse around the cell in the centre of the stack, this was then processed to a 3D spheroid mask using [SpherefromCirclev002.ijm](/SpherefromCirclev002.ijm?raw=true) and the individual cell extracted.
+Measurements of Mitotracker & MitoSox volumes, surface areas and intensities were calculated by thresholding deconvolved images using [MitoSoxWithTablev016.ijm](MitoSoxWithTablev016.ijm?raw=true).
+Outputs a results table summarizing all measurements, per cell and per mitochondrial structure.
+Outputs results images showing masks over the original input image:
+
+![Mitotr&MitoSox.jpg](/Images/Mitotr%26MitoSox.jpg)
+
+---
 ## **ICH Light Microscopy Facility Macro tools**
 
 ### **Scalebars Macros:**
