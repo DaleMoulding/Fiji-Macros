@@ -45,7 +45,7 @@ if (Microscope=="null") exit("you need to choose a microscope");
 for (i=0; i<list.length; i++) {
  	showProgress(i+1, list.length);
  	filename = dir1 + list[i];
- 	if (endsWith(filename, "tif")||endsWith(filename, "jpg")||endsWith(filename, "png")) {
+ 	if (endsWith(filename, "tif")||endsWith(filename, "tiff")||endsWith(filename, "jpg")||endsWith(filename, "png")) {
 open(filename);	
 Imagename = File.nameWithoutExtension;
 
