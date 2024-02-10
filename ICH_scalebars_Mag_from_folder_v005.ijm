@@ -7,6 +7,10 @@
 *Modified to accept filenames with a pseudo extension (i.e .a_1, .a_2 etc) before the .tif extension
 */
 
+// v6 fixed 'run("Remove Overlay");' whcih was previously inside the 'if (scalebar=="Yes") {' loop.
+// It now removes the scalebar if none is to be drawn
+// ALso opens .tiff files
+
 // Copyright (c) 2019 Dale Moulding, UCL. Made available for use under the MIT license.
 // https://opensource.org/licenses/MIT
 
@@ -49,7 +53,7 @@ if (Mag=="null") exit("you need to choose your magnification");
 for (i=0; i<list.length; i++) {
  	showProgress(i+1, list.length);
  	filename = dir1 + list[i];
- 	if (endsWith(filename, "tif")|endsWith(filename, "jpg")) {
+ 	if (endsWith(filename, "tif")||endsWith(filename, "tiff")||endsWith(filename, "jpg")||endsWith(filename, "png")) {
 open(filename);	
 //fullname = getTitle();
 //Imagename = substring(fullname, 0, lengthOf(fullname)-4); 
@@ -69,8 +73,8 @@ savepath = dir2+Imagename+".tif";
  	if (Mag=="63x") n = 0.134;
  	
  	run("Set Scale...", "distance=1 known="+n+" unit=um");
+  run("Remove Overlay");// removes any previously added scalebar
  	if (scalebar=="Yes") {
- 		run("Remove Overlay");// removes any previously added scalebar
  		run("Scale Bar...", "width=x height=h font=f color="+colour+" background=None location=[Lower Right] bold "+showtext+" overlay");
  	}
      // save as either a new file with -scalebar added to the ned of the name, or with the same name as the original file. 
@@ -92,8 +96,8 @@ savepath = dir2+Imagename+".tif";
  	if (Mag=="63x") n = 226.3;
  	
  	run("Set Scale...", "distance=width known="+n+" unit=um");
+  run("Remove Overlay");// removes any previously added scalebar
  	if (scalebar=="Yes") {
- 		run("Remove Overlay");// removes any previously added scalebar
  		run("Scale Bar...", "width=x height=h font=f color="+colour+" background=None location=[Lower Right] bold "+showtext+" overlay");
  	}
      // save as either a new file with -scalebar added to the ned of the name, or with the same name as the original file. 
@@ -113,9 +117,9 @@ if (Microscope=="5 NDU Zeiss axiocam") {
  	if (Mag=="40x") n = 355.5;
  	if (Mag=="63x") n = 226.3;
  	
-    run("Set Scale...", "distance=width known="+n+" unit=um");
+  run("Set Scale...", "distance=width known="+n+" unit=um");
+  run("Remove Overlay");// removes any previously added scalebar
  	if (scalebar=="Yes") {
- 		run("Remove Overlay");// removes any previously added scalebar
  		run("Scale Bar...", "width=x height=h font=f color="+colour+" background=None location=[Lower Right] bold "+showtext+" overlay");
  	}
      // save as either a new file with -scalebar added to the ned of the name, or with the same name as the original file. 
@@ -136,8 +140,8 @@ if (Microscope=="5 NDU Zeiss axiocam") {
  	if (Mag=="63x") exit("objective chosen is not on this scope");
  	
  	run("Set Scale...", "distance=1 known="+n+" unit=um");
+  run("Remove Overlay");// removes any previously added scalebar
  	if (scalebar=="Yes") {
- 		run("Remove Overlay");// removes any previously added scalebar
  		run("Scale Bar...", "width=x height=h font=f color="+colour+" background=None location=[Lower Right] bold "+showtext+" overlay");
  	}
      // save as either a new file with -scalebar added to the ned of the name, or with the same name as the original file. 
@@ -155,9 +159,10 @@ if (Microscope=="5 NDU Zeiss axiocam") {
  	if (Mag=="32x") n = 0.3184; 
  	if (Mag=="40x") n = 0.2283;
  	if (Mag=="63x") exit("objective chosen is not on this scope");
+
  	run("Set Scale...", "distance=1 known="+n+" unit=um");
+  run("Remove Overlay");// removes any previously added scalebar
  	if (scalebar=="Yes") {
- 		run("Remove Overlay");// removes any previously added scalebar
  		run("Scale Bar...", "width=x height=h font=f color="+colour+" background=None location=[Lower Right] bold "+showtext+" overlay");
  	}
      // save as either a new file with -scalebar added to the ned of the name, or with the same name as the original file. 
