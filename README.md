@@ -62,13 +62,18 @@ Thresholds for two channels (Synaptopodin and F-actin) and measures parameters d
 
 ---
 
-### **Monocyte Mitochondria and MitoSox**
+### **Mitochondria and MitoSox measurements**
 
-Wilkinson *et al* manuscript submitted.
+Wilkinson *et al* [Role of CD14+ monocyte-derived oxidised mitochondrial DNA in the inflammatory interferon type 1 signature in juvenile dermatomyositis](https://pubmed.ncbi.nlm.nih.gov/36564154/).
+
+Radziszewska *et al* Type I interferon and mitochondrial dysfunction are associated with dysregulated cytotoxic CD8+ T cell responses in juvenile systemic lupus erythematosus. (in preparation)
 
 Individual cells were cropped by manually drawing an ellipse around the cell in the centre of the stack, this was then processed to a 3D spheroid mask using [SpherefromCirclev002.ijm](/SpherefromCirclev002.ijm?raw=true) and the individual cell extracted.
 Measurements of Mitotracker & MitoSox volumes, surface areas and intensities were calculated by thresholding deconvolved images using [MitoSoxWithTablev016.ijm](MitoSoxWithTablev016.ijm?raw=true).
 Outputs a results table summarizing all measurements, per cell and per mitochondrial structure.
+
+Adapted macro for Radziszewska et al CD8 T-cell mitochondrial measurements: [MitoSoxWithTableAniav003.ijm](MitoSoxWithTableAniav003.ijm?raw=true).
+
 Outputs results images showing masks over the original input image:
 
 ![Mitotr&MitoSox.jpg](/Images/Mitotr%26MitoSox.jpg)
