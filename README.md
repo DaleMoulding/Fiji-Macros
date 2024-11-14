@@ -79,6 +79,15 @@ Outputs results images showing masks over the original input image:
 ![Mitotr&MitoSox.jpg](/Images/Mitotr%26MitoSox.jpg)
 
 ---
+
+### **3 level Dab quantifier**
+Rashidi *et al* Localized Delivery of Growth Factors from Microparticles Modulate Osteogenic and Chondrogenic Gene Expression in Growth Factor-dependent Manner in an ex vivo Chick Embryonic Bone Model. (In prepartaion).
+
+Simple 3 level thresholding of DAB staining. User defines an ROI, the image is colour deconvolved (Colour Deconvolution 2 [Landini G, Martinelli G, Piccinini F. Colour Deconvolution – stain unmixing in histological imaging. Bioinformatics 2020](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa847/5913390?guestAccessKey=148a8a4b-24f8-4b42-8742-e985535c9410). 
+The macro is available here: [DAB_High_med_low_Hassanv05.ijm](DAB_High_med_low_Hassanv05.ijmraw=true).
+
+---
+
 ## **ICH Light Microscopy Facility Macro tools**
 
 ### **Scalebars Macros:**
