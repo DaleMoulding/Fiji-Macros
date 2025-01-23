@@ -89,7 +89,7 @@ The macro is available here: [DAB_High_med_low_Hassanv05.ijm](DAB_High_med_low_H
 
 ---
 
-### **Bile Canaliculi assaay**
+### **Bile Canaliculi assay**
 
 Cozmescu *et al* Safety and efficacy analysis of in vivo lentiviral gene therapy for ARC syndrome. (Submitted).
 
