@@ -1,7 +1,7 @@
 /*
- * Macro written by Dale Moulding & Claudiu Cozmescu 2023
+ * Macro written by Claudiu Cozmescu 2023 with help from Dale Moulding.
  * Please acknowledge its use
- * Copyright (c) 2023 Dale Moulding, UCL. Made available for use under the MIT license.
+ * Copyright (c) 2023 Claudiu Cozmescu, UCL. Made available for use under the MIT license.
  * https://opensource.org/licenses/MIT
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
