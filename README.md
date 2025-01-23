@@ -85,7 +85,7 @@ Rashidi *et al* Localized Delivery of Growth Factors from Microparticles Modulat
 
 Simple 3 level thresholding of DAB staining. User defines an ROI, the image is colour deconvolved (Colour Deconvolution 2 [Landini G, Martinelli G, Piccinini F. Colour Deconvolution – stain unmixing in histological imaging. Bioinformatics 2020](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btaa847/5913390?guestAccessKey=148a8a4b-24f8-4b42-8742-e985535c9410). 
 
-The macro is available here: [DAB_High_med_low_Hassanv05.ijm](DAB_High_med_low_Hassanv05.ijmraw=true).
+The macro is available here: [DAB_High_med_low_Hassanv05.ijm](DAB_High_med_low_Hassanv05.ijm?raw=true).
 
 ---
 
@@ -93,7 +93,7 @@ The macro is available here: [DAB_High_med_low_Hassanv05.ijm](DAB_High_med_low_H
 
 Cozmescu *et al* Safety and efficacy analysis of in vivo lentiviral gene therapy for ARC syndrome. (Submitted).
 
-The macro is available here: [BileCanaliculi_Assay_MacroV2.ijm](BileCanaliculi_Assay_MacroV2.ijmraw=true).
+The macro is available here: [BileCanaliculi_Assay_MacroV2.ijm](BileCanaliculi_Assay_MacroV2.ijm?raw=true).
 
 ---
 
