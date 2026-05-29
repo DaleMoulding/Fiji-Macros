@@ -102,7 +102,7 @@ The macro is available here: [BileCanaliculi_Assay_MacroV2.ijm](BileCanaliculi_A
 
 ### **Scalebars Macros:**
 
-[ICH_Scalebars_Mag_anywhere_in_Filename_v5.ijm](/ICH_Scalebars_Mag_anywhere_in_Filename_v5.ijm) and 
+[ICH_Scalebars_Mag_anywhere_in_Filename_v5.ijm](ICH_Scalebars_Mag_anywhere_in_Filename_v06.ijm) and 
 [ICH_scalebars_Mag_from_folder_v06.ijm](/ICH_scalebars_Mag_from_folder_v06.ijm)
 
 These set the scale and optionally add scalebars to files with the magnification written anywhere_in_Filename (i.e 5x, 10x, 2.5x, recognizes any format x10, 10x, 10X, X10, as long as there no spaces between number and x). 
